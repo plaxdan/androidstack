@@ -7,5 +7,6 @@
     </string>
     <string name="hello_world" >Hello world!
     </string>
+    <string name="greet">Greet</string>
 
 </resources>

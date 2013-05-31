@@ -8,8 +8,13 @@ buildscript {
 }
 apply plugin: 'android'
 
+repositories {
+    mavenCentral()
+}
+
 dependencies {
     compile files('libs/android-support-v4.jar')
+    compile 'com.squareup:otto:1.3.3'
 }
 
 android {
