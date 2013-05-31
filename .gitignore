@@ -34,3 +34,7 @@ proguard/
 # Gradle
 .gradle/
 build/
+
+# build logs
+*.log
+*-log.xml
