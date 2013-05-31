@@ -1,1 +1,10 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+task calabash(type:Exec) {
+    thePath = pathToApk("debug")
+    commandLine "calabash-android", "run", thePath
+}
+
+def pathToApk(String buildType) {
+    "$project.name/build/apk/$project.name-$buildType-unaligned.apk"
+}
