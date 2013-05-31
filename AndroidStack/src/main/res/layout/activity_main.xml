@@ -19,6 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/helloMessage"
+            android:text="Prepare to be greeted..."
             android:layout_below="@id/greetingButton"
             android:layout_alignLeft="@id/greetingButton" />
 
