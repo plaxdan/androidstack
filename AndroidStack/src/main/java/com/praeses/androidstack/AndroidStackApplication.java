@@ -14,12 +14,10 @@ public class AndroidStackApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        EventBusModule events = new EventBusModule();
-        HelloModule hello = new HelloModule();
 
         graph = ObjectGraph.create(
-                new HelloModule(),
-                new EventBusModule()
+                new EventBusModule(),
+                new HelloModule()
         );
     }
 
