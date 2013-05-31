@@ -38,3 +38,4 @@ build/
 # build logs
 *.log
 *-log.xml
+screenshot*
