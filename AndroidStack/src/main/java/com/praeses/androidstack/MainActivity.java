@@ -1,14 +1,12 @@
 package com.praeses.androidstack;
 
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
 import com.praeses.androidstack.core.HelloModel;
 import com.praeses.androidstack.core.events.HelloEvent;
-import com.squareup.otto.Bus;
 import com.squareup.otto.Subscribe;
 
 import javax.inject.Inject;

@@ -1,14 +1,14 @@
 package com.praeses.androidstack.di;
 
-import com.praeses.androidstack.MainActivity;
 import com.praeses.androidstack.core.EnglishHelloModel;
+import com.praeses.androidstack.core.FrenchHelloModel;
 import com.praeses.androidstack.core.HelloModel;
 import com.squareup.otto.Bus;
 
 import dagger.Module;
 import dagger.Provides;
 
-@Module (injects = MainActivity.class)
+@Module
 public class HelloModule {
     @Provides
     public HelloModel provideHelloModel(Bus bus) {

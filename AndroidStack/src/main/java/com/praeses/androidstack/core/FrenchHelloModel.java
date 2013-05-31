@@ -5,17 +5,16 @@ import com.squareup.otto.Bus;
 
 import javax.inject.Inject;
 
-public class EnglishHelloModel implements HelloModel {
-
+public class FrenchHelloModel implements HelloModel {
     private final Bus bus;
 
     @Inject
-    public EnglishHelloModel(Bus bus) {
+    public FrenchHelloModel(Bus bus) {
         this.bus = bus;
     }
 
     @Override
     public void sayHello() {
-        bus.post(new HelloEvent("Hello, how are you?", this));
+        bus.post(new HelloEvent("Bonjour. Comment ca va?", this));
     }
 }
